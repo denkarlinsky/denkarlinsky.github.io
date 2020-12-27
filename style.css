@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(88, 88, 88);
+}
+#playerOne, #playerTwo {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    border-top: 15px solid black;
+    border-left: 15px solid black;
+    border-right: 15px solid white;
+    border-bottom: 15px solid white;
+}
+#playerTwo {
+    left: 250px;
+}
+
+.dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .middleDot {
+    width: 50px;
+    height: 50px;
+    background-color: #212121;
+    border-radius: 100%;
+    display: flex;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+}
+.dot1, .dot2, .dot3 {top: 10px;}
+.dot4, .dot5, .dot6 {top: 140px;}
+.middleDot {
+    top: 75px;
+    left: 75px;
+}
+.dot1{left: 10px;} .dot2{left: 75px;} .dot3{left: 140px;}
+.dot4{left: 10px;} .dot5{left: 75px;} .dot6{left: 140px;}
+
+#play {
+    width: 250px;
+    height: 150px;
+    background-color: rgb(60, 151, 98);
+    color: #fff;
+    font-size: 2rem;
+    align-items: center;
+    margin: 0;
+    left: 40%;
+    position: absolute;
+    top: 50%;
+}
+.buttone {
+    width: 100%;
+    position: relative;
+}
+#winner {
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    #playerOne, #playerTwo {
+        top: 150px;
+        width: 120px;
+        height: 120px;
+    }
+    #playerTwo {
+        left: 190px;
+    }
+    .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .middleDot {
+        width: 20px;
+        height: 20px;
+    }
+
+    .dot1, .dot4{left: 10px;} .dot2, .dot5 {left: 50px;} .dot3, .dot6{left: 90px;}
+
+    .dot4, .dot5, .dot6 {top: 90px;}
+    .middleDot {
+    top: 50px;
+    left: 50px;
+}
+#play {
+    width: 250px;
+    height: 150px;
+    background-color: rgb(60, 151, 98);
+    color: #fff;
+    font-size: 2rem;
+    align-items: center;
+    margin: 0;
+    left: 17%;
+    position: absolute;
+    top: 300px;
+}
+
+#winner {
+    left: 100px;
+}
+
+}
